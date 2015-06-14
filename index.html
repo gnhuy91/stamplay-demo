@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Suggestions</title>
+
+    <!-- CSS -->
+    <!-- load bootstrap ionicons and custom css -->
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+	<!-- JS -->
+	<!-- load stamplay sdk, angular, angular-stamplay service -->
+	<script src="./bower_components/stamplay-sdk/dist/stamplay.min.js"></script>
+	<script>
+		// initiate stamplay app with app name
+		Stamplay.init('gnhuy');
+	</script>
+	<script src="./bower_components/angular/angular.min.js"></script>
+	<script src="./bower_components/angular-stamplay/angular-stamplay.js"></script>
+
+	<script src="./app/services/suggestion.js"></script>
+    <script src="./app/services/user.js"></script>
+    <script src="./app/app.js"></script>
+</head>
+<body ng-app="stamplayApp" ng-controller="MainController as main">
+
+    <section class="site-topper">
+    <div class="container">
+        <div class="page-header text-center">
+            <h1>Suggestions with Stamplay and Angular</h1>
+        </div>
+
+        <div class="suggestion-container">
+            <div class="suggestion-page">
+
+                <div class="login-message text-center"">
+					<a href="/auth/v0/google/connect" class="btn btn-danger btn-lg">
+						<i class="icon ion-social-google"></i>
+						Login
+					</a>
+				</div>
+        
+            </div>
+            <div class="suggestion-box">
+                Suggestion Box
+            </div>
+        </div>
+    </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "appId": "gnhuy",
+  "apiKey": "3fd9b6200664cf9d76e0e840f472b1ec8c722e71f0ccd875596d89a6d649c515",
+  "public": "./",
+  "ignore": [
+    "stamplay.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

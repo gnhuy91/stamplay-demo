@@ -1,0 +1,19 @@
+{
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "stamplay-sdk": "~1.0.0",
+    "angular-stamplay": "*",
+    "angular": "~1.4.0",
+    "bootstrap": "~3.3.4",
+    "ionicons": "~2.0.1"
+  }
+}

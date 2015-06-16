@@ -84,17 +84,18 @@
 					<div class="vote-buttons btn-group-vertical">
 
 						{{ suggestion.instance.actions.votes.total }}
-
-						<a class="btn btn-success" 
-							ng-click="main.vote(suggestion, 'upvote')"
-							ng-disabled="suggestion.instance.actions.votes.upvoted">
-							<i class="icon ion-thumbsup"></i>
-						</a>
-						<a class="btn btn-danger"
-							ng-click="main.vote(suggestion, 'downvote')"
-							ng-disabled="suggestion.instance.actions.votes.downvoted">
-							<i class="icon ion-thumbsdown"></i>
-						</a>
+						<div ng-show="!main.loggedIn">
+							<a class="btn btn-success" 
+								ng-click="main.vote(suggestion, 'upvote')"
+								ng-disabled="suggestion.instance.actions.votes.upvoted">
+								<i class="icon ion-thumbsup"></i>
+							</a>
+							<a class="btn btn-danger"
+								ng-click="main.vote(suggestion, 'downvote')"
+								ng-disabled="suggestion.instance.actions.votes.downvoted">
+								<i class="icon ion-thumbsdown"></i>
+							</a>
+						</div>
 					</div>
 
 				</div>

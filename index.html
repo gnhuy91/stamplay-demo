@@ -80,22 +80,22 @@
 			<div class="col-sm-4 col-lg-3 text-center" ng-repeat="suggestion in main.suggestionList">
 				<div class="suggestion">
 					<p>{{ suggestion.instance.text }}</p>
-
+					
 					<div class="vote-buttons btn-group-vertical">
-
 						{{ suggestion.instance.actions.votes.total }}
-						<div ng-show="!main.loggedIn">
-							<a class="btn btn-success" 
-								ng-click="main.vote(suggestion, 'upvote')"
-								ng-disabled="suggestion.instance.actions.votes.upvoted">
-								<i class="icon ion-thumbsup"></i>
-							</a>
-							<a class="btn btn-danger"
-								ng-click="main.vote(suggestion, 'downvote')"
-								ng-disabled="suggestion.instance.actions.votes.downvoted">
-								<i class="icon ion-thumbsdown"></i>
-							</a>
-						</div>
+						<a class="btn btn-success" 
+							ng-click="main.vote(suggestion, 'upvote')"
+							ng-disabled="suggestion.instance.actions.votes.upvoted"
+							ng-show="main.loggedIn">
+							<i class="icon ion-thumbsup"></i>
+						</a>
+						<a class="btn btn-danger"
+							ng-click="main.vote(suggestion, 'downvote')"
+							ng-disabled="suggestion.instance.actions.votes.downvoted"
+							ng-show="main.loggedIn">
+							<i class="icon ion-thumbsdown"></i>
+						</a>
+
 					</div>
 
 				</div>
